@@ -1,0 +1,58 @@
+# =========================
+# General
+# =========================
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.venv/
+env/
+venv/
+
+# =========================
+# Java
+# =========================
+*.class
+*.jar
+*.war
+*.ear
+target/
+out/
+
+# =========================
+# C#
+# =========================
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.config
+*.vs/
+*.user
+*.suo
+
+# =========================
+# Dotnet
+# =========================
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# =========================
+# Other
+# =========================
+*.sln.docstates

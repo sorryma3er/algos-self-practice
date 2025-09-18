@@ -53,6 +53,27 @@ project.fragment.lock.json
 artifacts/
 
 # =========================
+# Scala / sbt / Metals / Bloop / Scala-CLI
+# =========================
+# sbt
+project/target/
+project/project/
+# Metals & Bloop
+.metals/
+.bloop/
+.bsp/
+# Scala-CLI build dirs
+.scala-build/
+# Ammonite (Scala scripting)
+.ammonite/
+amm-repl-*
+# Mill (if you try it later)
+out/
+
+# Optional: Scala worksheets (Metals)
+*.worksheet.sc
+
+# =========================
 # Other
 # =========================
 *.sln.docstates

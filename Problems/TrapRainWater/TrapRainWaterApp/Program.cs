@@ -1,41 +1,34 @@
-﻿public class Solution
+﻿/*
+
+43 Trapping rain water
+Given n non-negative integers representing an elevation map where the width of each bar is 1, 
+compute how much water it can trap after raining.
+
+*/
+public class Solution
 {
     public int Trap(int[] height)
     {
-        int start = 0;
-        int end = 0;
-        int total = 0;
-        for (int i = 0; i < height.Length; i++)
+        int leftMax = height[0];
+        int rightMax = height[height.Length - 1];
+        int waterTrapped = 0;
+        int left = 0, right = height.Length - 1; // keep two pointers at both sides
+        while (left <= right)
         {
-            if (i < end) continue;
-
-            if (height[i] > 0)
+            if (leftMax <= rightMax) // the smaller sides decide curr water trapped val
             {
-                start = i;
-
-                for (int j = start + 1; j < height.Length; j++)
-                {
-                    if (height[j] >= height[i])
-                    {
-                        end = j;
-                        break;
-                    }
-                }
+                leftMax = Math.Max(leftMax, height[left]); // update the leftMax based on the height[curr_idx] with leftMax
+                waterTrapped += leftMax - height[left]; // since we just compared both value so at most 0, wont be negative
+                left++; // move left pointer
             }
-
-            if (end != 0)
+            else
             {
-                int treashold = height[start] >= height[end] ? height[end] : height[start];
-                for (int j = start + 1; j < end; j++)
-                {
-                    if (height[j] < treashold)
-                    {
-                        total += treashold - height[j];
-                    }
-                }
+                rightMax = Math.Max(rightMax, height[right]);
+                waterTrapped += rightMax - height[right];
+                right--;
             }
         }
-        return total;
+        return waterTrapped;
     }
 }
 
@@ -43,7 +36,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        int[] test = [4,2,0,3,2,5];
+        int[] test = [0,1,0,2,1,0,1,3,2,1,2,1];
         Console.WriteLine(new Solution().Trap(test));
     }
 }

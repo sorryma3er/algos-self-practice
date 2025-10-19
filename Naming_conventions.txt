@@ -1,0 +1,16 @@
+Recommended naming conventions for TS & JS:
+	•	Folders / files: prefer kebab-case (all-lowercase with hyphens) → e.g. trap-rain-water.ts, two-sum.js.
+	•	Reason: portable on case-insensitive filesystems; easy to read; common in Node repos.
+	•	Variables / functions: camelCase
+	•	Classes / types / interfaces / enums: PascalCase
+	•	Constants: UPPER_SNAKE_CASE
+	•	Tests (if/when you add): name.test.ts / name.test.js
+
+Run mesurements for TS & JS:
+# 直接运行 TypeScript（会向上查找根的 node_modules）
+npx tsx trap-rain-water.ts
+# 或者（同效果）
+node --loader tsx trap-rain-water.ts
+
+cd Problems/TrapRainWater/js
+node trap-rain-water.js

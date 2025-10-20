@@ -14,3 +14,21 @@ node --loader tsx trap-rain-water.ts
 
 cd Problems/TrapRainWater/js
 node trap-rain-water.js
+
+
+
+Recommended naming conventions for Java:
+•	Packages / folders / files: packages all-lowercase, dot-separated; folders mirror packages; files = PublicClassName.java → e.g. package com.example.ds.stack → src/main/java/com/example/ds/stack/LinkedListStack.java
+•	Reason: package⇄directory alignment; portability on case-insensitive filesystems; standard across Java tooling
+•	Variables / methods: camelCase
+•	Classes / interfaces / enums / annotations: PascalCase
+•	Constants: UPPER_SNAKE_CASE (static final), e.g. DEFAULT_TIMEOUT_MS
+•	Tests (if/when you add): FooBarTest.java under src/test/java mirroring package (e.g. com.example.ds.stack.LinkedListStackTest)
+
+Recommended naming conventions for Python:
+•	Folders / files: packages lowercase (underscores OK); modules lowercase_with_underscores → e.g. data_structures/linked_list_stack.py
+•	Reason: PEP 8 readability and import friendliness across OS/filesystems
+•	Variables / functions: snake_case
+•	Classes / types / exceptions: PascalCase (exceptions usually end with Error)
+•	Constants: UPPER_SNAKE_CASE at module level, e.g. DEFAULT_TIMEOUT = 5
+•	Tests (if/when you add): tests/test_name.py (pytest) or name_test.py (unittest)

@@ -1,4 +1,4 @@
-package Problems.Candy;
+package Candy;
 
 import java.util.Arrays;
 

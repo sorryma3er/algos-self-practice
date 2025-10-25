@@ -1,3 +1,5 @@
+package Bubble_Sort;
+
 public class BubbleSort {
     public static int[] bubbleSort(int[] nums) {
         int n = nums.length;

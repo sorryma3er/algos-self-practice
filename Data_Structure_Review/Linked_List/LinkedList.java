@@ -1,3 +1,5 @@
+package Linked_List;
+
 public class LinkedList {
 
     // in java OOP style, we need an entry point to be able to use this data structure

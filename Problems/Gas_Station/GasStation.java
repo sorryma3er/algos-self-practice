@@ -1,4 +1,4 @@
-package Problems.Gas_Station;
+package Gas_Station;
 
 public class GasStation {
     public static void main(String[] args) {

@@ -32,3 +32,14 @@ Recommended naming conventions for Python:
 •	Classes / types / exceptions: PascalCase (exceptions usually end with Error)
 •	Constants: UPPER_SNAKE_CASE at module level, e.g. DEFAULT_TIMEOUT = 5
 •	Tests (if/when you add): tests/test_name.py (pytest) or name_test.py (unittest)
+
+
+
+Recommended naming conventions for Scala:
+•	Packages / folders / files: packages all-lowercase, dot-separated; folders mirror packages; files = PublicTypeName.scala → e.g. package com.example.ds.stack → src/main/scala/com/example/ds/stack/LinkedListStack.scala
+•	Reason: package⇄directory alignment; standard SBT layout; smooth tooling (scalac/IDE) and JVM interop
+•	Variables / methods: camelCase
+•	Classes / traits / objects / enums: PascalCase (e.g. class LinkedListStack, trait Stack, object AppMain, enum Color)
+•	Constants: UPPER_SNAKE_CASE for compile-time constants in an object/companion (final val), e.g. MAX_SIZE = 1024
+•	Type parameters / type aliases: single caps or short caps (T, A, K, V), type aliases in PascalCase (e.g. type UserId = Int)
+•	Tests (if/when you add): FooBarSpec.scala under src/test/scala mirroring package (e.g. com.example.ds.stack.LinkedListStackSpec)

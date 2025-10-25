@@ -58,6 +58,6 @@ public class IntToRoman {
 
     public static void main(String[] args) {
         System.out.println(intToRoman(1287)); // MCCLXXXVII
-
+        
     }
 }

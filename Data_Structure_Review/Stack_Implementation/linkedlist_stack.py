@@ -51,7 +51,7 @@ class LinkedListStack:
             arr.append(curr._val)
             curr = curr._next
             
-        arr.reverse()
+        arr.reverse() # reverse the collection so its LIFO
         return arr
             
     

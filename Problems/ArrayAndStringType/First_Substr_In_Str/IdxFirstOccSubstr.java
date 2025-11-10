@@ -1,4 +1,4 @@
-package First_Substr_In_Str;
+package ArrayAndStringType.First_Substr_In_Str;
 
 public class IdxFirstOccSubstr {
     public static void main(String[] args) {

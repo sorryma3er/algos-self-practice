@@ -1,4 +1,4 @@
-package Bubble_Sort;
+package ArrayAndStringType.Bubble_Sort;
 
 public class BubbleSort {
     public static int[] bubbleSort(int[] nums) {

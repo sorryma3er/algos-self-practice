@@ -1,4 +1,4 @@
-package Length_Of_Last_Word;
+package ArrayAndStringType.Length_Of_Last_Word;
 
 class Solution {
     public int lengthOfLastWord(String s) {

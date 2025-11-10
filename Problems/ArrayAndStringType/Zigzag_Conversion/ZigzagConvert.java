@@ -1,4 +1,4 @@
-package Zigzag_Conversion;
+package ArrayAndStringType.Zigzag_Conversion;
 
 import java.util.ArrayList;
 

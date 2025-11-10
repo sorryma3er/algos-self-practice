@@ -1,4 +1,4 @@
-package Text_Justification;
+package ArrayAndStringType.Text_Justification;
 import java.util.*;
 
 public class textJustification {

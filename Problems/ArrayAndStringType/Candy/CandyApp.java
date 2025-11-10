@@ -1,4 +1,4 @@
-package Candy;
+package ArrayAndStringType.Candy;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package Int_To_Roman;
+package ArrayAndStringType.Int_To_Roman;
 
 public class IntToRoman {
     public static String intToRoman(int num) {

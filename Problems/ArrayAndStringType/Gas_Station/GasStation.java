@@ -1,4 +1,4 @@
-package Gas_Station;
+package ArrayAndStringType.Gas_Station;
 
 public class GasStation {
     public static void main(String[] args) {

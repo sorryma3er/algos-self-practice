@@ -1,4 +1,4 @@
-package Reverse_Words_In_String;
+package ArrayAndStringType.Reverse_Words_In_String;
 import java.util.Collections;
 import java.util.Arrays;
 

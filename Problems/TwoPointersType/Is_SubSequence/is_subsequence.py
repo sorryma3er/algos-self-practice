@@ -1,5 +1,7 @@
 class Solution:
-    # didnt make use of two pointers thought tho
+    # actually used two pointers thought implicitly:
+    # one is i -> len(t)
+    # another one is compare_idx
     def isSubsequence(self, s: str, t: str) -> bool:
         compare_idx: int = 0
         for i in range(len(t)):

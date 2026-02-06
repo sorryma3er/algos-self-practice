@@ -1,4 +1,4 @@
-package StackAndQueue.Last_Stone_pq_maxHeap;
+package StackAndQueue.Heap.Last_Stone_pq_maxHeap;
 
 import java.util.*;
 
